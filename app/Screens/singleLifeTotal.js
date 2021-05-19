@@ -20,8 +20,8 @@ const image = { uri: "https://www.enjpg.com/img/2020/4k-mobile-7.jpg" };
 // const image = { uri: "https://www.enjpg.com/img/2020/4k-for-mobile-3.jpg" };
 
 function singleLifeTotal({ navigation }) {
-  const [lifeTotal, setLifeTotal] = useState(40);
   const startingLifeTotal = 40;
+  const [lifeTotal, setLifeTotal] = useState(startingLifeTotal);
 
   const increaseLife = () => {
     let currentLifeTotal = lifeTotal + 1;
@@ -102,8 +102,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "row",
-    // backgroundColor: "gray",
-    // alignItems: 'center',
     justifyContent: "center",
   },
   commanderButton: {
@@ -130,12 +128,12 @@ const styles = StyleSheet.create({
   increaseLife: {
     flex: 1,
     flexDirection: "row",
-    backgroundColor: "rgba(0,200,0,0.25)",
+    // backgroundColor: "rgba(0,200,0,0.25)",
   },
   decreaseLife: {
     flex: 1,
     flexDirection: "row",
-    backgroundColor: "rgba(200,0,0,0.25)",
+    // backgroundColor: "rgba(200,0,0,0.25)",
   },
   background: {
     flex: 1,
@@ -148,10 +146,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignSelf: "center",
     position: "absolute",
-    width: 125,
-    height: 60,
+    width: 192,
+    height: 150,
     color: "white",
-    fontSize: 42,
+    fontSize: 100,
     fontWeight: "bold",
     textAlign: "center",
     // backgroundColor: "black",
