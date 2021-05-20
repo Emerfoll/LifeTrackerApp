@@ -7,7 +7,7 @@ import twoPlayer from "../app/Screens/twoPlayer"
 // Used for "Stack Navigation"
 const screens = {
     Home : {
-        screen : twoPlayer,
+        screen : homePage,
     },
     Single: {
         screen : singleLifeTotal,
