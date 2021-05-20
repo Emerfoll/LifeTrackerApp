@@ -1,48 +1,37 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
-import { StyleSheet, Text, View, ImageBackground, Button } from "react-native";
-import {
-  useDimensions,
-  useDeviceOrientation,
-} from "@react-native-community/hooks";
+import { StyleSheet, Text, View, ImageBackground, } from "react-native";
 
 const image = { uri: "https://www.enjpg.com/img/2020/4k-for-mobile-3.jpg" };
 
 function homePage({ navigation }) {
-  const [poisonCounters, setPoisonCounters] = useState(0);
-
-  const increasePoisonCounters = () => {
-    console.log("Poison counters increased by one");
-    setPoisonCounters(poisonCounters + 1);
-  };
-
+  {
+    /* --------------------------- Navigation Section --------------------------- */
+  }
   const sendToSingleLifeTotal = () => {
-    console.log(
-      "Clicking this button will route the user to 'singleLifeTotal'"
-    );
-    // navigates the the "otherTestScreen"
     navigation.navigate("Single");
   };
 
   const sendToTwoPlayer = () => {
-    console.log(
-      "Clicking this button will route the user to 'two player mode'"
-    );
-    // navigates the the "otherTestScreen"
     navigation.navigate("Two");
   };
+  {
+    /* --------------------------- End of Navigation Section --------------------------- */
+  }
 
   return (
     <ImageBackground source={image} style={styles.background}>
-      <Text style={styles.poisonText}>Number of players:</Text>
+      <Text style={styles.numberOfPlayersText}>Number of players:</Text>
+      {/* --------------------------- Navigates to Single Player Mode --------------------------- */}
       <Text style={styles.onePlayer} onPress={() => sendToSingleLifeTotal()}>
         One Player
       </Text>
+      {/* --------------------------- Navigates to Two Player Mode --------------------------- */}
       <Text style={styles.twoPlayer} onPress={() => sendToTwoPlayer()}>
         Two Players
       </Text>
 
-      {/* place holders for buttons that will be added later. */}
+      {/* place holders for buttons that may be added later. */}
       <View style={styles.loginButton} />
 
       <View style={styles.registerButton} />
@@ -66,7 +55,7 @@ const styles = StyleSheet.create({
     height: 70,
     backgroundColor: "gray",
   },
-  poisonText: {
+  numberOfPlayersText: {
     color: "white",
     fontSize: 42,
     fontWeight: "bold",
@@ -89,7 +78,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     position: "absolute",
     top: 320,
-  }
+  },
 });
 
 export default homePage;

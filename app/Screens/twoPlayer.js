@@ -8,21 +8,23 @@ import {
   Alert,
   TouchableOpacity,
 } from "react-native";
-import {
-  useDimensions,
-  useDeviceOrientation,
-} from "@react-native-community/hooks";
 
-// const image = { uri: "https://www.enjpg.com/img/2020/4k-mobile-7.jpg" };
+// Image used for the background
 const image = { uri: "https://www.enjpg.com/img/2020/4k-for-mobile-3.jpg" };
 
-function singleLifeTotal({ navigation }) {
+{
+  /* --------------------------- Sets the starting Life Total --------------------------- */
+}
+function singleLifeTotal() {
   const startingLifeTotal = 40;
   const [playerOneLifeTotal, setPlayerOneLifeTotal] =
     useState(startingLifeTotal);
   const [playerTwoLifeTotal, setPlayerTwoLifeTotal] =
     useState(startingLifeTotal);
 
+  {
+    /* --------------------------- Increase Life Total section --------------------------- */
+  }
   const increaseLife = (player) => {
     let currentLifeTotal;
     if (player === 1) {
@@ -34,6 +36,14 @@ function singleLifeTotal({ navigation }) {
     }
   };
 
+  {
+    /* --------------------------- End of Increase Life Total section --------------------------- */
+  }
+
+  {
+    /* --------------------------- Decrease Life Total section --------------------------- */
+  }
+
   const decreaseLife = (player) => {
     let currentLifeTotal;
     if (player === 1) {
@@ -43,26 +53,24 @@ function singleLifeTotal({ navigation }) {
       currentLifeTotal = playerTwoLifeTotal - 1;
       setPlayerTwoLifeTotal(currentLifeTotal);
     }
-    console.log("decreasing life total", currentLifeTotal);
-    
   };
 
+  {
+    /* --------------------------- End of Decrease Life Total section --------------------------- */
+  }
+
+  {
+    /* --------------------------- Reset Life Total section --------------------------- */
+  }
   const resetGame = () => {
     console.log("resetting game");
 
     setPlayerOneLifeTotal(startingLifeTotal);
+    setPlayerTwoLifeTotal(startingLifeTotal);
   };
-
-  // used to detect if the screen is in portrait or landscape mode
-  const { landscape } = useDeviceOrientation();
-
-  const sendToOtherScreen = () => {
-    console.log(
-      "Clicking this button will route the user to 'otherTestScreen'"
-    );
-    // navigates the the "otherTestScreen"
-    navigation.navigate("Other");
-  };
+  {
+    /* --------------------------- Reset Life Total section --------------------------- */
+  }
 
   return (
     <ImageBackground source={image} style={styles.background}>
@@ -100,6 +108,10 @@ function singleLifeTotal({ navigation }) {
         />
       </View>
 
+      {/* --------------------------- End of Player one section --------------------------- */}
+
+      {/* --------------------------- Reset Button section --------------------------- */}
+
       <View style={styles.resetButtonArea}>
         <View>
           <Text
@@ -121,8 +133,8 @@ function singleLifeTotal({ navigation }) {
             Reset
           </Text>
         </View>
-        {/* </TouchableOpacity> */}
       </View>
+      {/* --------------------------- End of Reset Button section --------------------------- */}
     </ImageBackground>
   );
 }
@@ -133,10 +145,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     justifyContent: "center",
-    transform: [
-        // { rotateY: "90deg" },
-        { rotateZ: "180deg" }
-      ]
+    transform: [{ rotateZ: "180deg" }],
   },
   containerTwo: {
     flex: 1,
@@ -167,11 +176,13 @@ const styles = StyleSheet.create({
   increaseLife: {
     flex: 1,
     flexDirection: "row",
+    zIndex: 10,
     // backgroundColor: "rgba(0,200,0,0.25)",
   },
   decreaseLife: {
     flex: 1,
     flexDirection: "row",
+    zIndex: 10,
     // backgroundColor: "rgba(200,0,0,0.25)",
   },
   background: {
@@ -181,24 +192,17 @@ const styles = StyleSheet.create({
   },
   lifeTotal: {
     flex: 0.6,
-    flexDirection: "column",
-    justifyContent: "center",
     alignSelf: "center",
     position: "absolute",
     width: 192,
-    height: 130,
+    height: 150,
     color: "white",
-    fontSize: 111,
+    fontSize: 100,
     fontWeight: "bold",
     textAlign: "center",
     // backgroundColor: "black",
-    zIndex: -1000,
   },
   text: {
-    // flex: 0.4,
-    flexDirection: "column",
-    justifyContent: "center",
-    alignSelf: "center",
     position: "absolute",
     top: 45,
     width: 125,
@@ -207,7 +211,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
     textAlign: "center",
     // backgroundColor: "grey",
-    zIndex: -1000,
   },
   image: {
     marginBottom: 15,
