@@ -73,8 +73,8 @@ function singleLifeTotal({ navigation }) {
           onPress={() => decreaseLife(1)}
         />
 
-        <Text style={styles.textOne}>Life Total:</Text>
-        <Text style={styles.playerOneLifeTotal}>{playerOneLifeTotal}</Text>
+        <Text style={styles.text}>Life Total:</Text>
+        <Text style={styles.lifeTotal}>{playerOneLifeTotal}</Text>
 
         <TouchableOpacity
           style={styles.increaseLife}
@@ -91,8 +91,8 @@ function singleLifeTotal({ navigation }) {
           onPress={() => decreaseLife(2)}
         />
 
-        <Text style={styles.textTwo}>Life Total:</Text>
-        <Text style={styles.playerOneLifeTotal}>{playerTwoLifeTotal}</Text>
+        <Text style={styles.text}>Life Total:</Text>
+        <Text style={styles.lifeTotal}>{playerTwoLifeTotal}</Text>
 
         <TouchableOpacity
           style={styles.increaseLife}
@@ -179,22 +179,22 @@ const styles = StyleSheet.create({
     resizeMode: "cover",
     justifyContent: "center",
   },
-  playerOneLifeTotal: {
+  lifeTotal: {
     flex: 0.6,
     flexDirection: "column",
     justifyContent: "center",
     alignSelf: "center",
     position: "absolute",
     width: 192,
-    height: 150,
+    height: 130,
     color: "white",
-    fontSize: 100,
+    fontSize: 111,
     fontWeight: "bold",
     textAlign: "center",
     // backgroundColor: "black",
-    zIndex: 1000,
+    zIndex: -1000,
   },
-  textOne: {
+  text: {
     // flex: 0.4,
     flexDirection: "column",
     justifyContent: "center",
@@ -207,22 +207,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     textAlign: "center",
     // backgroundColor: "grey",
-    zIndex: 1000,
-  },
-  textTwo: {
-    // flex: 0.4,
-    flexDirection: "column",
-    justifyContent: "center",
-    alignSelf: "center",
-    position: "absolute",
-    top: 45,
-    width: 125,
-    height: 60,
-    color: "white",
-    fontSize: 24,
-    textAlign: "center",
-    // backgroundColor: "grey",
-    zIndex: 1000,
+    zIndex: -1000,
   },
   image: {
     marginBottom: 15,

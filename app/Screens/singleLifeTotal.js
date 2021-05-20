@@ -59,7 +59,7 @@ function singleLifeTotal({ navigation }) {
         />
 
         <Text style={styles.text}>Life Total:</Text>
-        <Text style={styles.playerOneLifeTotal}>{playerOneLifeTotal}</Text>
+        <Text style={styles.lifeTotal}>{playerOneLifeTotal}</Text>
 
         <TouchableOpacity
           style={styles.increaseLife}
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     resizeMode: "cover",
     justifyContent: "center",
   },
-  playerOneLifeTotal: {
+  lifeTotal: {
     flex: 0.6,
     flexDirection: "column",
     justifyContent: "center",
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     // backgroundColor: "black",
-    zIndex: 1000,
+    zIndex: -1000,
   },
   text: {
     // flex: 0.4,
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     textAlign: "center",
     // backgroundColor: "grey",
-    zIndex: 1000,
+    zIndex: -1000,
   },
   image: {
     marginBottom: 15,
