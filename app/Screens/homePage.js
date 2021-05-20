@@ -24,21 +24,26 @@ function homePage({ navigation }) {
     navigation.navigate("Single");
   };
 
+  const sendToTwoPlayer = () => {
+    console.log(
+      "Clicking this button will route the user to 'two player mode'"
+    );
+    // navigates the the "otherTestScreen"
+    navigation.navigate("Two");
+  };
+
   return (
     <ImageBackground source={image} style={styles.background}>
-      <Text style={styles.poisonText} >
-        Number of players:
+      <Text style={styles.poisonText}>Number of players:</Text>
+      <Text style={styles.onePlayer} onPress={() => sendToSingleLifeTotal()}>
+        One Player
       </Text>
-      <Text 
-      style={styles.onePlayer}
-      onPress={()=> sendToSingleLifeTotal()}
-      >One Player</Text>
+      <Text style={styles.twoPlayer} onPress={() => sendToTwoPlayer()}>
+        Two Players
+      </Text>
 
       {/* place holders for buttons that will be added later. */}
-      <View 
-      style={styles.loginButton} 
-      
-      />
+      <View style={styles.loginButton} />
 
       <View style={styles.registerButton} />
     </ImageBackground>
@@ -76,6 +81,14 @@ const styles = StyleSheet.create({
     textAlign: "center",
     position: "absolute",
     top: 260,
+  },
+  twoPlayer: {
+    color: "white",
+    fontSize: 42,
+    fontWeight: "bold",
+    textAlign: "center",
+    position: "absolute",
+    top: 320,
   }
 });
 
