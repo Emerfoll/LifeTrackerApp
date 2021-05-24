@@ -171,6 +171,7 @@ const styles = StyleSheet.create({
     bottom: -20,
     fontSize: 42,
     textAlign: "center",
+    zIndex: 1000,
     // backgroundColor: 'black',
   },
 });
