@@ -9,4 +9,4 @@ As of right now it is usable as a single player or two player life tracking app.
 I plan on adding some more features soon.
 
 
-![Home Screen]("assets/ScreenShot-HomeScreen.png" "Home Screen")
+![Home Screen]("https://raw.githubusercontent.com/Emerfoll/LifeTrackerApp/main/assets/ScreenShot-HomeScreen.png" "Home Screen")
