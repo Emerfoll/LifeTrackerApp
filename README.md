@@ -11,6 +11,7 @@ I plan on adding some more features soon.
 
 
 This is the screen you are greeted with when the application starts up. Pressing (or tapping) one of the options brings you to its corresponding screen.
+
 ![Home Screen](https://raw.githubusercontent.com/Emerfoll/LifeTrackerApp/main/assets/ScreenShot-HomeScreen.png "Home Screen")
 
 Single player mode is used if you are only keeping track of your own life total. Pressing (or tapping) on the left side of the screen will loser the current life total and pressing (or tapping) on the right side will increase the current life total.
