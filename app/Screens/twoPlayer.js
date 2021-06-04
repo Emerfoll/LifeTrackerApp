@@ -92,6 +92,9 @@ function singleLifeTotal() {
 
       {/* --------------------------- End of Player one section --------------------------- */}
 
+      <Text style={styles.plusSign}>+</Text>
+      <Text style={styles.minusSign}>-</Text>
+
       {/* --------------------------- Player two section --------------------------- */}
       <View style={styles.containerTwo}>
         <TouchableOpacity
@@ -108,8 +111,11 @@ function singleLifeTotal() {
         />
       </View>
 
-      {/* --------------------------- End of Player one section --------------------------- */}
+      {/* --------------------------- End of Player two section --------------------------- */}
 
+      <Text style={styles.plusSign}>+</Text>
+      <Text style={styles.minusSign}>-</Text>
+      
       {/* --------------------------- Reset Button section --------------------------- */}
 
       <View style={styles.resetButtonArea}>
@@ -180,11 +186,26 @@ const styles = StyleSheet.create({
     zIndex: 10,
     // backgroundColor: "rgba(0,200,0,0.25)",
   },
+  plusSign: {
+    flexDirection: "row",
+    alignSelf: "flex-end",
+    position: "absolute",
+    color: "white",
+    fontSize: 50,
+    right: 60,
+  },
   decreaseLife: {
     flex: 1,
     flexDirection: "row",
     zIndex: 10,
     // backgroundColor: "rgba(200,0,0,0.25)",
+  },
+  minusSign: {
+    flexDirection: "row",
+    position: "absolute",
+    color: "white",
+    fontSize: 90,
+    left: 60,
   },
   background: {
     flex: 1,
