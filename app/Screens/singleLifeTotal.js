@@ -59,6 +59,7 @@ function singleLifeTotal({ navigation }) {
           onPress={() => decreaseLife()}
         />
         {/* --------------------------- End of Clickable Decrease Life Total Section --------------------------- */}
+
         {/* --------------------------- Display Life Total Section --------------------------- */}
 
         <Text style={styles.text}>Life Total:</Text>
@@ -72,6 +73,9 @@ function singleLifeTotal({ navigation }) {
         />
       </View>
       {/* --------------------------- End of Clickable Increase Life Total Section --------------------------- */}
+
+      <Text style={styles.plusSign}>+</Text>
+      <Text style={styles.minusSign}>-</Text>
 
       {/* --------------------------- Reset Life Total Section --------------------------- */}
       <View style={styles.resetButtonArea}>
@@ -123,11 +127,31 @@ const styles = StyleSheet.create({
     zIndex: 10,
     // backgroundColor: "rgba(0,200,0,0.25)",
   },
+  plusSign: {
+    // flex: 0.6,
+    flexDirection: "row",
+    // justifyContent: "center",
+    alignSelf: "flex-end",
+    position: "absolute",
+    color: "white",
+    fontSize: 50,
+    right: 60,
+  },
   decreaseLife: {
     flex: 1,
     flexDirection: "row",
     zIndex: 10,
     // backgroundColor: "rgba(200,0,0,0.25)",
+  },
+  minusSign: {
+    // flex: 0.6,
+    flexDirection: "row",
+    // justifyContent: "center",
+    // alignSelf: "flex-end",
+    position: "absolute",
+    color: "white",
+    fontSize: 90,
+    left: 60,
   },
   lifeTotal: {
     flex: 0.6,
