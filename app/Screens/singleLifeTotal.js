@@ -74,9 +74,13 @@ function singleLifeTotal({ navigation }) {
       </View>
       {/* --------------------------- End of Clickable Increase Life Total Section --------------------------- */}
 
+      {/* --------------------------- Plus and Minus symbols --------------------------- */}
+
       <Text style={styles.plusSign}>+</Text>
       <Text style={styles.minusSign}>-</Text>
 
+      {/* --------------------------- End of Plus and Minus symbols --------------------------- */}
+      
       {/* --------------------------- Reset Life Total Section --------------------------- */}
       <View style={styles.resetButtonArea}>
         <View>
@@ -128,9 +132,7 @@ const styles = StyleSheet.create({
     // backgroundColor: "rgba(0,200,0,0.25)",
   },
   plusSign: {
-    // flex: 0.6,
     flexDirection: "row",
-    // justifyContent: "center",
     alignSelf: "flex-end",
     position: "absolute",
     color: "white",
@@ -144,10 +146,7 @@ const styles = StyleSheet.create({
     // backgroundColor: "rgba(200,0,0,0.25)",
   },
   minusSign: {
-    // flex: 0.6,
     flexDirection: "row",
-    // justifyContent: "center",
-    // alignSelf: "flex-end",
     position: "absolute",
     color: "white",
     fontSize: 90,
@@ -168,7 +167,6 @@ const styles = StyleSheet.create({
     // backgroundColor: "black",
   },
   text: {
-    // flex: 0.4,
     flexDirection: "column",
     justifyContent: "center",
     alignSelf: "center",
