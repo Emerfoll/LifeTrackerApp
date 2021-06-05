@@ -81,8 +81,12 @@ function singleLifeTotal() {
           onPress={() => decreaseLife(1)}
         />
 
+        <Text style={styles.minusSign}>-</Text>
+
         <Text style={styles.text}>Life Total:</Text>
         <Text style={styles.lifeTotal}>{playerOneLifeTotal}</Text>
+
+        <Text style={styles.plusSign}>+</Text>
 
         <TouchableOpacity
           style={styles.increaseLife}
@@ -92,18 +96,18 @@ function singleLifeTotal() {
 
       {/* --------------------------- End of Player one section --------------------------- */}
 
-      <Text style={styles.plusSign}>+</Text>
-      <Text style={styles.minusSign}>-</Text>
-
       {/* --------------------------- Player two section --------------------------- */}
       <View style={styles.containerTwo}>
         <TouchableOpacity
           style={styles.decreaseLife}
           onPress={() => decreaseLife(2)}
         />
+        <Text style={styles.minusSign}>-</Text>
 
         <Text style={styles.text}>Life Total:</Text>
         <Text style={styles.lifeTotal}>{playerTwoLifeTotal}</Text>
+
+        <Text style={styles.plusSign}>+</Text>
 
         <TouchableOpacity
           style={styles.increaseLife}
@@ -113,9 +117,6 @@ function singleLifeTotal() {
 
       {/* --------------------------- End of Player two section --------------------------- */}
 
-      <Text style={styles.plusSign}>+</Text>
-      <Text style={styles.minusSign}>-</Text>
-      
       {/* --------------------------- Reset Button section --------------------------- */}
 
       <View style={styles.resetButtonArea}>
@@ -193,6 +194,7 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 50,
     right: 60,
+    bottom: 165,
   },
   decreaseLife: {
     flex: 1,
@@ -206,6 +208,7 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 90,
     left: 60,
+    bottom: 143,
   },
   background: {
     flex: 1,
