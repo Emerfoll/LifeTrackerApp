@@ -74,7 +74,7 @@ function singleLifeTotal({ navigation }) {
       </View>
       {/* --------------------------- End of Clickable Increase Life Total Section --------------------------- */}
 
-      {/* --------------------------- Plus and Minus symbols --------------------------- */}
+      {/* --------------------------- Plus and Minus symbols for clarity --------------------------- */}
 
       <Text style={styles.plusSign}>+</Text>
       <Text style={styles.minusSign}>-</Text>
