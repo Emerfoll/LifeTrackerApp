@@ -21,6 +21,10 @@ function singleLifeTotal() {
     useState(startingLifeTotal);
   const [playerTwoLifeTotal, setPlayerTwoLifeTotal] =
     useState(startingLifeTotal);
+  const [playerThreeLifeTotal, setPlayerThreeLifeTotal] =
+    useState(startingLifeTotal);
+  const [playerFourLifeTotal, setPlayerFourLifeTotal] =
+    useState(startingLifeTotal);
 
   {
     /* --------------------------- Increase Life Total section --------------------------- */
@@ -30,9 +34,15 @@ function singleLifeTotal() {
     if (player === 1) {
       currentLifeTotal = playerOneLifeTotal + 1;
       setPlayerOneLifeTotal(currentLifeTotal);
-    } else {
+    } else if (player === 2) {
       currentLifeTotal = playerTwoLifeTotal + 1;
       setPlayerTwoLifeTotal(currentLifeTotal);
+    } else if (player === 3) {
+      currentLifeTotal = playerThreeLifeTotal + 1;
+      setPlayerThreeLifeTotal(currentLifeTotal);
+    } else {
+      currentLifeTotal = playerFourLifeTotal + 1;
+      setPlayerFourLifeTotal(currentLifeTotal);
     }
   };
 
@@ -49,9 +59,15 @@ function singleLifeTotal() {
     if (player === 1) {
       currentLifeTotal = playerOneLifeTotal - 1;
       setPlayerOneLifeTotal(currentLifeTotal);
-    } else {
+    } else if (player === 2) {
       currentLifeTotal = playerTwoLifeTotal - 1;
       setPlayerTwoLifeTotal(currentLifeTotal);
+    } else if (player === 3) {
+      currentLifeTotal = playerThreeLifeTotal - 1;
+      setPlayerThreeLifeTotal(currentLifeTotal);
+    } else {
+      currentLifeTotal = playerFourLifeTotal - 1;
+      setPlayerFourLifeTotal(currentLifeTotal);
     }
   };
 
