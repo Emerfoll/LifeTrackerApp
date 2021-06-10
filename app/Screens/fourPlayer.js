@@ -83,6 +83,8 @@ function singleLifeTotal() {
 
     setPlayerOneLifeTotal(startingLifeTotal);
     setPlayerTwoLifeTotal(startingLifeTotal);
+    setPlayerThreeLifeTotal(startingLifeTotal);
+    setPlayerFourLifeTotal(startingLifeTotal);
   };
   {
     /* --------------------------- Reset Life Total section --------------------------- */
