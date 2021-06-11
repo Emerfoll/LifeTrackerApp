@@ -14,6 +14,12 @@ const screens = {
     },
     Two: {
         screen : twoPlayer,
+    },
+    Three: {
+        screen : threePlayer,
+    },
+    Four: {
+        screen : fourPlayer,
     }
 };
 
