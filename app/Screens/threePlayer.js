@@ -146,7 +146,7 @@ function singleLifeTotal() {
               )
             }
           >
-            Reset
+            Reset 3
           </Text>
         </View>
       </View>

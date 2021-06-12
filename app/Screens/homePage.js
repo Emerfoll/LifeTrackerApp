@@ -15,6 +15,14 @@ function homePage({ navigation }) {
   const sendToTwoPlayer = () => {
     navigation.navigate("Two");
   };
+
+  const sendToThreePlayer = () => {
+    navigation.navigate("Three");
+  };
+
+  const sendToFourPlayer = () => {
+    navigation.navigate("Four");
+  };
   {
     /* --------------------------- End of Navigation Section --------------------------- */
   }
@@ -29,6 +37,14 @@ function homePage({ navigation }) {
       {/* --------------------------- Navigates to Two Player Mode --------------------------- */}
       <Text style={styles.twoPlayer} onPress={() => sendToTwoPlayer()}>
         Two Players
+      </Text>
+      {/* --------------------------- Navigates to Three Player Mode --------------------------- */}
+      <Text style={styles.threePlayer} onPress={() => sendToThreePlayer()}>
+        Three Players
+      </Text>
+      {/* --------------------------- Navigates to Four Player Mode --------------------------- */}
+      <Text style={styles.fourPlayer} onPress={() => sendToFourPlayer()}>
+        Four Players
       </Text>
 
       {/* place holders for buttons that may be added later. */}
@@ -78,6 +94,22 @@ const styles = StyleSheet.create({
     textAlign: "center",
     position: "absolute",
     top: 320,
+  },
+  threePlayer: {
+    color: "white",
+    fontSize: 42,
+    fontWeight: "bold",
+    textAlign: "center",
+    position: "absolute",
+    top: 520,
+  },
+  fourPlayer: {
+    color: "white",
+    fontSize: 42,
+    fontWeight: "bold",
+    textAlign: "center",
+    position: "absolute",
+    top: 720,
   },
 });
 
