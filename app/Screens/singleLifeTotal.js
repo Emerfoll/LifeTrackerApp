@@ -15,7 +15,7 @@ const image = { uri: "https://www.enjpg.com/img/2020/4k-mobile-7.jpg" };
 {
   /* --------------------------- Sets the starting Life Total --------------------------- */
 }
-function singleLifeTotal({ navigation }) {
+function singleLifeTotal() {
   const startingLifeTotal = 40;
   const [playerOneLifeTotal, setPlayerOneLifeTotal] =
     useState(startingLifeTotal);

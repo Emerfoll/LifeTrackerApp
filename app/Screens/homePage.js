@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     position: "absolute",
-    top: 520,
+    top: 380,
   },
   fourPlayer: {
     color: "white",
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     position: "absolute",
-    top: 720,
+    top: 440,
   },
 });
 
