@@ -1,5 +1,5 @@
 # LifeTrackerApp
-App to track life total for card games like Magic the Gathering, Flesh and Blood, ect.
+App to track life total for card games like Magic the Gathering, Flesh and Blood, etc.
 
 I made this app in the process of learning ReactNative and feel it has helped me progress in my ReactNative skills. I wanted to make an app that I could actually
 see myself using in real situations that also used the navigation features I learned with my last ReactNative project.
