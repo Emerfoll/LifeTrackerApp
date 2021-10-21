@@ -287,7 +287,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     position: "absolute",
     width: 192,
-    height: 150,
+    height: 120,
     color: "white",
     fontSize: 100,
     fontWeight: "bold",
