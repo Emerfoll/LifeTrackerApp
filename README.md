@@ -14,14 +14,20 @@ This is the screen you are greeted with when the application starts up. Pressing
 
 ![Home Screen](https://raw.githubusercontent.com/Emerfoll/LifeTrackerApp/main/assets/ScreenShot-HomeScreen.png "Home Screen")
 
-Single player mode is used if you are only keeping track of your own life total. Pressing (or tapping) on the left side of the screen will loser the current life total and pressing (or tapping) on the right side will increase the current life total.
+Single player mode is used if you are only keeping track of your own life total. Pressing (or tapping) on the left side of the screen will decrease the current life total and pressing (or tapping) on the right side will increase the current life total.
 
 The "Reset" button is used when you want to restore the life total to the starting life total (40).
 
 ![Single Player Screen](https://raw.githubusercontent.com/Emerfoll/LifeTrackerApp/main/assets/ScreenShot-SinglePlayer.png "Single Player Screen")
 
-Two player mode is used when you want to keep track of your life total and a friends life total. Like single player mode, pressing (or tapping) on the left side of the life total will loser the current life total and pressing (or tapping) on the right side will increase the current life total.
+Two player mode is used when you want to keep track of your life total and a friends life total. Like single player mode, pressing (or tapping) on the left side of the life total will decrease the current life total and pressing (or tapping) on the right side will increase the current life total.
 
 The "Reset" button is used when you want to restore the life total to the starting life total (40).
 
 ![Two Player Screen](https://raw.githubusercontent.com/Emerfoll/LifeTrackerApp/main/assets/ScreenShot-TwoPlayer.png "Two Player Screen")
+
+Three player mode is used when you want to keep track of life totals for your group. Like single player mode, pressing (or tapping) on the left side of the life total will decrease the current life total and pressing (or tapping) on the right side will increase the current life total.
+
+The "Reset" button is used when you want to restore the life total to the starting life total (40).
+
+![Two Player Screen](https://raw.githubusercontent.com/Emerfoll/LifeTrackerApp/main/assets/ScreenShot-ThreePlayer.png "Two Player Screen")
