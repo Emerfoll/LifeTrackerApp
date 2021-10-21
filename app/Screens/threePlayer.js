@@ -15,7 +15,7 @@ const image = { uri: "https://www.enjpg.com/img/2020/4k-for-mobile-3.jpg" };
 {
   /* --------------------------- Sets the starting Life Total --------------------------- */
 }
-function singleLifeTotal() {
+function threeLifeTotal() {
   const startingLifeTotal = 40;
   const [playerOneLifeTotal, setPlayerOneLifeTotal] =
     useState(startingLifeTotal);
@@ -83,6 +83,7 @@ function singleLifeTotal() {
 
   return (
     <ImageBackground source={image} style={styles.background}>
+      <View style={styles.playerOneAndTwo}>
       {/* --------------------------- Player one section --------------------------- */}
       <View style={styles.containerOne}>
         <TouchableOpacity
@@ -123,8 +124,34 @@ function singleLifeTotal() {
           onPress={() => increaseLife(2)}
         />
       </View>
-
+      </View>
       {/* --------------------------- End of Player two section --------------------------- */}
+
+      <View style={styles.playerThree}>
+      {/* --------------------------- Player Three section --------------------------- */}
+      <View style={styles.containerOne}>
+        <TouchableOpacity
+          style={styles.decreaseLife}
+          onPress={() => decreaseLife(3)}
+        />
+
+        <Text style={styles.minusSignPlayerThree}>-</Text>
+
+        <Text style={styles.textPlayerThree}>Life Total:</Text>
+        <Text style={styles.lifeTotal}>{playerThreeLifeTotal}</Text>
+
+        <Text style={styles.plusSignPlayerThree}>+</Text>
+
+        <TouchableOpacity
+          style={styles.increaseLife}
+          onPress={() => increaseLife(3)}
+        />
+      </View>
+</View>
+
+      {/* --------------------------- End of Player Three section --------------------------- */}
+
+      
 
       {/* --------------------------- Reset Button section --------------------------- */}
 
@@ -157,6 +184,20 @@ function singleLifeTotal() {
 
 const styles = StyleSheet.create({
   // style for the container
+  playerOneAndTwo: {
+    flex: .55,
+    flexDirection: "column",
+    justifyContent: "center",
+    transform: [{ rotateZ: "90deg" }],
+    // backgroundColor: "purple"
+  },
+  playerThree: {
+    flex: .55,
+    flexDirection: "column",
+    justifyContent: "center",
+    transform: [{ rotateZ: "180deg" }],
+    // backgroundColor: "purple"
+  },
   containerOne: {
     flex: 1,
     flexDirection: "row",
@@ -184,7 +225,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignSelf: "center",
     position: "absolute",
-    bottom: -20,
+    bottom: 10,
     fontSize: 42,
     textAlign: "center",
     zIndex: 1000,
@@ -197,6 +238,15 @@ const styles = StyleSheet.create({
     // backgroundColor: "rgba(0,200,0,0.25)",
   },
   plusSign: {
+    flexDirection: "row",
+    alignSelf: "flex-end",
+    position: "absolute",
+    color: "white",
+    fontSize: 50,
+    right: 60,
+    bottom: 65,
+  },
+  plusSignPlayerThree: {
     flexDirection: "row",
     alignSelf: "flex-end",
     position: "absolute",
@@ -217,12 +267,20 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 90,
     left: 60,
+    bottom: 43,
+  },
+  minusSignPlayerThree: {
+    flexDirection: "row",
+    position: "absolute",
+    color: "white",
+    fontSize: 90,
+    left: 60,
     bottom: 143,
   },
   background: {
     flex: 1,
     resizeMode: "cover",
-    justifyContent: "center",
+    // justifyContent: "center",
   },
   lifeTotal: {
     flex: 0.6,
@@ -238,7 +296,17 @@ const styles = StyleSheet.create({
   },
   text: {
     position: "absolute",
-    top: 45,
+    top: 5,
+    width: 125,
+    height: 60,
+    color: "white",
+    fontSize: 24,
+    textAlign: "center",
+    // backgroundColor: "grey",
+  },
+  textPlayerThree: {
+    position: "absolute",
+    top: 95,
     width: 125,
     height: 60,
     color: "white",
@@ -251,4 +319,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default singleLifeTotal;
+export default threeLifeTotal;

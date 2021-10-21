@@ -39,13 +39,13 @@ function homePage({ navigation }) {
         Two Players
       </Text>
       {/* --------------------------- Navigates to Three Player Mode --------------------------- */}
-      <Text style={styles.threePlayer} onPress={() => sendToThreePlayer()}>
+      {/* <Text style={styles.threePlayer} onPress={() => sendToThreePlayer()}>
         Three Players
-      </Text>
+      </Text> */}
       {/* --------------------------- Navigates to Four Player Mode --------------------------- */}
-      <Text style={styles.fourPlayer} onPress={() => sendToFourPlayer()}>
+      {/* <Text style={styles.fourPlayer} onPress={() => sendToFourPlayer()}>
         Four Players
-      </Text>
+      </Text> */}
 
       {/* place holders for buttons that may be added later. */}
       <View style={styles.loginButton} />

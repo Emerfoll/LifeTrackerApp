@@ -9,7 +9,7 @@ import fourPlayer from "../app/Screens/fourPlayer";
 // Used for "Stack Navigation"
 const screens = {
     Home : {
-        screen : homePage,
+        screen : threePlayer,
     },
     Single: {
         screen : singleLifeTotal,
