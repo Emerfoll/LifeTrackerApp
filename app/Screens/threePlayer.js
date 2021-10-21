@@ -173,7 +173,7 @@ function threeLifeTotal() {
               )
             }
           >
-            Reset 3
+            Reset
           </Text>
         </View>
       </View>
