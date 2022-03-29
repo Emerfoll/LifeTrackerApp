@@ -20,9 +20,9 @@ function homePage({ navigation }) {
     navigation.navigate("Three");
   };
 
-  const sendToFourPlayer = () => {
-    navigation.navigate("Four");
-  };
+  // const sendToFourPlayer = () => {
+  //   navigation.navigate("Four");
+  // };
   {
     /* --------------------------- End of Navigation Section --------------------------- */
   }
