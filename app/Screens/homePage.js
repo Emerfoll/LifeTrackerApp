@@ -6,7 +6,7 @@ const image = { uri: "https://www.enjpg.com/img/2020/4k-for-mobile-3.jpg" };
 
 function homePage({ navigation }) {
   {
-    /* --------------------------- Navigation Section --------------------------- */
+    /* --------------------------- Navigation Logic Section --------------------------- */
   }
   const sendToSingleLifeTotal = () => {
     navigation.navigate("Single");
@@ -24,7 +24,7 @@ function homePage({ navigation }) {
   //   navigation.navigate("Four");
   // };
   {
-    /* --------------------------- End of Navigation Section --------------------------- */
+    /* --------------------------- End of Navigation Logic Section --------------------------- */
   }
 
   return (
