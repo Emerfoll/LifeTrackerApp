@@ -20,9 +20,9 @@ function homePage({ navigation }) {
     navigation.navigate("Three");
   };
 
-  // const sendToFourPlayer = () => {
-  //   navigation.navigate("Four");
-  // };
+  const sendToFourPlayer = () => {
+    navigation.navigate("Four");
+  };
   {
     /* --------------------------- End of Navigation Logic Section --------------------------- */
   }
@@ -43,9 +43,9 @@ function homePage({ navigation }) {
         Three Players
       </Text>
       {/* --------------------------- Navigates to Four Player Mode --------------------------- */}
-      {/* <Text style={styles.fourPlayer} onPress={() => sendToFourPlayer()}>
+      <Text style={styles.fourPlayer} onPress={() => sendToFourPlayer()}>
         Four Players
-      </Text> */}
+      </Text>
 
       {/* place holders for buttons that may be added later. */}
       <View style={styles.loginButton} />
