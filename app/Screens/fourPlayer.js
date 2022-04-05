@@ -135,6 +135,50 @@ function singleLifeTotal() {
 
       {/* --------------------------- End of Player two section --------------------------- */}
 
+      {/* --------------------------- Player three section --------------------------- */}
+      <View style={styles.containerThree}>
+        <TouchableOpacity
+          style={styles.decreaseLife}
+          onPress={() => decreaseLife(3)}
+        />
+
+        <Text style={styles.minusSign}>-</Text>
+
+        <Text style={styles.text}>Life Total:</Text>
+        <Text style={styles.lifeTotal}>{playerThreeLifeTotal}</Text>
+
+        <Text style={styles.plusSign}>+</Text>
+
+        <TouchableOpacity
+          style={styles.increaseLife}
+          onPress={() => increaseLife(3)}
+        />
+      </View>
+
+      {/* --------------------------- End of Player three section --------------------------- */}
+
+      {/* --------------------------- Player three section --------------------------- */}
+      <View style={styles.containerFour}>
+        <TouchableOpacity
+          style={styles.decreaseLife}
+          onPress={() => decreaseLife(4)}
+        />
+
+        <Text style={styles.minusSign}>-</Text>
+
+        <Text style={styles.text}>Life Total:</Text>
+        <Text style={styles.lifeTotal}>{playerFourLifeTotal}</Text>
+
+        <Text style={styles.plusSign}>+</Text>
+
+        <TouchableOpacity
+          style={styles.increaseLife}
+          onPress={() => increaseLife(4)}
+        />
+      </View>
+
+      {/* --------------------------- End of Player three section --------------------------- */}
+
       {/* --------------------------- Reset Button section --------------------------- */}
 
       <View style={styles.resetButtonArea}>
